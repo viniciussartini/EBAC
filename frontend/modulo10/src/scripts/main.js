@@ -3,3 +3,7 @@ $(document).ready(function() {
         autoplay:true
     })
 })
+
+$('.menu-hamburguer').click(function() {
+    $('nav').slideToggle();
+})
