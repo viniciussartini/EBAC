@@ -45,4 +45,13 @@ $(document).ready(function() {
             console.log(wrongFields);
         }
     })
+
+    $('.vehicles-list button').click(function() {
+        const moveTo = $('#contact');
+        const vehicleName = $(this).parent().find('h3').text();
+        $('#vehicleInterest').val(vehicleName);
+        $('html').animate({
+            scrollTop: moveTo.offset().top
+        }, 1000)
+    })
 })
