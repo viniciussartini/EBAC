@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background-color: #393E46;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    background-color: #222831;
+}
+
+h1, label {
+    color: #DBD8E3;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+form {
+    margin: 0 125px;
+}
+
+form > label,
+form > input,
+button {
+    display: block;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form > input {
+    width: 420px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+input {
+    position: relative; /* Posiciona o input relativamente */
+    padding-left: 20px; /* Adiciona padding à esquerda */
+}
+
+input::placeholder {
+    position: absolute; /* Posiciona o placeholder absoluto dentro do input */
+    top: 50%; /* Posiciona verticalmente no meio */
+    transform: translateY(-50%); /* Ajusta o posicionamento vertical */
+    left: 20px; /* Ajuste o espaço à esquerda do texto */
+    font-size: 12px;
+    color: #DBD8E3; /* Cor do placeholder */
+}
+
+div#btn-area {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #DBD8E3;
+    background-color: #00ADB5;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    color: #222831;
+    background-color: #00FFF5;
+}
+
+label.error {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: red;
+}
